@@ -125,7 +125,7 @@ def johnson(graph):
         extra_node -= 1
     augmented_graph = graph.copy()
     augmented_graph[extra_node] = [[node, 0] for node in graph]
-    # BUG: Does not contain nodes which have no outgoing edges
+    #TODO: Change above line as to include nodes which have no outgoing edges.
 
     # Step 2: Run the Bellman-Ford algorithm on the augmented graph to determine
     # the vertex weights
